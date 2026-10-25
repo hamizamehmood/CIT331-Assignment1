@@ -56,3 +56,41 @@ h3 {
 article h2 {
     color: #243b67;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #526da8;
+}
+
+button {
+    background-color: #243b67;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #172746;
+}
+
+#message {
+    color: #18743b;
+    font-weight: bold;
+}
