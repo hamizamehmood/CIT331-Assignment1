@@ -54,3 +54,4 @@ clearButton.addEventListener("click", function() {
 
     message.textContent = "All registrations cleared.";
 });
+displayRegistrations();
