@@ -25,5 +25,5 @@ The AI Society website provides information about university club events and all
 
 
 ## Live Website
-[Add your GitHub Pages URL here after publishing the website.](https://cit331-assignment1-0032.vercel.app/)
+[Vercel URL](https://cit331-assignment1-0032.vercel.app/)
 
