@@ -93,4 +93,40 @@ button:hover {
 #message {
     color: #18743b;
     font-weight: bold;
+}footer {
+    background-color: #172746;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+#registration-list {
+    padding-left: 25px;
+}
+
+#registration-list li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    main {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    section,
+    article,
+    aside {
+        padding: 15px;
+    }
 }
