@@ -25,5 +25,5 @@ The AI Society website provides information about university club events and all
 
 
 ## Live Website
-[Vercel URL](https://cit331-assignment1-0032.vercel.app/)
+(https://cit331-assignment1-0032.vercel.app/)
 
