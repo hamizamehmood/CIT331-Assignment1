@@ -8,3 +8,26 @@ body {
     color: #222;
     line-height: 1.6;
 }
+header {
+    background-color: #243b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+nav {
+    background-color: #172746;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
