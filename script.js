@@ -21,3 +21,27 @@ function displayRegistrations() {
         list.appendChild(item);
     });
 }
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const registration = {
+        name: form.elements["name"].value,
+        email: form.elements["email"].value,
+        phone: form.elements["phone"].value,
+        event: form.elements["event"].value,
+        source: form.elements["source"].value
+    };
+
+    registrations.push(registration);
+
+    localStorage.setItem(
+        "registrations",
+        JSON.stringify(registrations)
+    );
+
+    displayRegistrations();
+
+    message.textContent = "Registration saved successfully!";
+
+    form.reset();
+});
