@@ -45,3 +45,12 @@ form.addEventListener("submit", function(event) {
 
     form.reset();
 });
+clearButton.addEventListener("click", function() {
+    registrations = [];
+
+    localStorage.removeItem("registrations");
+
+    displayRegistrations();
+
+    message.textContent = "All registrations cleared.";
+});
