@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Society | Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Join AI Society</h1>
+        <p>Register for our upcoming events.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="register.html" class="active">Register</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Registration Form</h2>
+
+            <form id="registration-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name"
+                       minlength="3" required>
+
+                <label for="email">University Email:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="student@university.edu"
+                       required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="03001234567"
+                       pattern="03[0-9]{9}"
+                       title="Enter an 11-digit Pakistani mobile number"
+                       required>
+
+                <fieldset>
+                    <legend>Choose an Event</legend>
+
+                    <label for="event">Available Events:</label>
+                    <select id="event" name="event" required>
+                        <option value="">Select an event</option>
+                        <option value="Introduction to AI">Introduction to AI</option>
+                        <option value="Machine Learning Workshop">Machine Learning Workshop</option>
+                        <option value="Cybersecurity Awareness">Cybersecurity Awareness</option>
+                        <option value="AI Project Exhibition">AI Project Exhibition</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+
+                    <label>
+                        <input type="radio" name="source"
+                               value="Social Media" required>
+                        Social Media
+                    </label>
+
+                    <label>
+                        <input type="radio" name="source"
+                               value="Friend">
+                        Friend
+                    </label>
+
+                    <label>
+                        <input type="radio" name="source"
+                               value="University Website">
+                        University Website
+                    </label>
+                </fieldset>
+
+                <button type="submit">Register Now</button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section>
+            <h2>Saved Registrations</h2>
+
+            <ul id="registration-list"></ul>
+
+            <button type="button" id="clear-all">
+                Clear All
+            </button>
+        </section>
+
+        <aside>
+            <h2>Need Help?</h2>
+            <p>Contact the AI Society committee for event details.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>AI Society | CIT331 Web Technologies</p>
+    </footer>
+
+</body>
+</html>
